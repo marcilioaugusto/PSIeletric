@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+a {
+    text-decoration: none;
+    color: #7159c1;
+    font-size: 18px;
+}
+
+
+/* Formulario */
+#corpo-form-cad {
+    border: #7159c1 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 20px 20px;
+    margin: 80px auto 20px auto;
+    /* centralizando o formulario na pagina */
+    /* padding: 30px; */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+fieldset {
+    margin-right: 20px;
+    width: 40%;
+}
+
+fieldset>legend {
+    color: #7159c1;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+input {
+    border: solid;
+    display: block;
+    /* por padrao os inputs possuem a propriedade e valor display:inline(em linha) com o display block os inputs fica um abaixo do outro */
+    margin: 12px;
+    height: 50px;
+    width: 450px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    /* espaçamento para o placeholder (texto sugerido dentro do input) */
+    outline: none;
+    /* removendo borda interna quando clica dentro do input */
+}
+
+.uf {
+    width: 80px;
+    text-align: center;
+}
+
+.links-form {
+    display: flex;
+    align-items: center;
+    font-style: bolder;
+    margin: 20px 0px;
+}
+
+.links-form>a {
+    text-decoration: none;
+    color: #7159c1;
+    margin-left: 5px;
+}
+
+.links-form>a:hover {
+    text-decoration: underline;
+}
+
+.corpo-form>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:480px) {
+
+    #corpo-form-cad {
+        width: auto;
+        margin: 20px 20px 0px 20px;
+
+    }
+
+    input {
+        border: solid 2px;
+        display: block;
+        /* por padrao os inputs possuem a propriedade e valor display:inline(em linha) com o display block os inputs fica um abaixo do outro */
+        margin: 5px;
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px 20px;
+        /* espaçamento para o placeholder (texto sugerido dentro do input) */
+        outline: none;
+        /* removendo borda interna quando clica dentro do input */
+    }
+
+    ::-webkit-input-placeholder {
+        color: black;
+        font-size: 15px;
+    }
+
+    input:-moz-placeholder {
+        font-size: 50px;
+    }
+
+
+}
+
+@media (max-width:320px) {
+
+    #corpo-form-cad {
+        width: auto;
+        margin: 20px 10px 0px 10px;
+    }
+
+    input {
+        width: 230px;
+    }
+
+    fieldset {
+        margin-right: 0px;
+        width: 40%;
+    }
+
+
+}
+
+/* estilizando o botao Submit do formulario */
+input[type=submit] {
+    background-color: #7159c1;
+    cursor: pointer;
+    color: white;
+}
+
+div#msg-sucesso {
+    width: 400px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px solid rgb(34, 139, 34);
+
+}
+
+div.msg-erro {
+    width: 350px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(250, 128, 114, .3);
+    border: 1px solid rgb(165, 42, 42);
+}
+
+@media (max-width:320px) {
+
+    div#msg-sucesso {
+        width: 300px;
+    }
+
+    div.msg-erro {
+        width: 300px;
+    }
+}
+
+/*  */
+footer {
+    height: 200px;
+}

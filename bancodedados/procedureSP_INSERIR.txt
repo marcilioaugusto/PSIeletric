@@ -1,0 +1,30 @@
+INSERT INTO servico (descricao, data, Cliente_id, valor) VALUES ('manutenção de rede', now(), 1, 120.10);
+SELECT * FROM servico;
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_inserir`(
+		_nome varchar(45), _cpf char(11), _email varchar(45), _telefone varchar(14), _senha varchar(32),
+        _cep char(8), _logradouro varchar(45), _numero int(11), _complemento varchar(45), _tipo varchar(45), _cidade varchar(45), _bairro varchar(45),
+        _uf char(2)
+)
+BEGIN
+	  declare id_cliente int unsigned default 0 ;
+		INSERT INTO 
+			cliente(nome, cpf, email, telefone, ativo, senha) 
+            VALUES (_nome, _cpf, _email, _telefone, default, _senha);
+
+		set id_cliente = last_insert_id() ;
+		
+        INSERT INTO 
+            endereco(cliente_id,cep, logradouro, numero, complemento, tipo, cidade, bairro, uf)
+			VALUES (id_cliente,_cep, _logradouro, _numero, _complemento, _tipo, _cidade, _bairro, _uf);
+END
+
+
+
+
+/*call  sp_inserir('cris','cpf123','email123','telefone123','123senha','08080','RUA','010','B','casa','São Paulo','Tatuape','SP');*/
+
+/*call  sp_inserir('nome','cpf','email','telefone',1,'123');*/
+
+   

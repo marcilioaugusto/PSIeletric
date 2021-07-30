@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos gerais */
+a {
+    text-decoration: none;
+    color: #7159c1;
+    font-size: 18px;
+}
+
+
+/* Formulario */
+#corpo-form-cad {
+    border: #7159c1 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 550px; */
+    width: 90%;
+    padding: 40px 20px;
+    margin: 80px auto 20px auto;
+    /* centralizando o formulario na pagina */
+    /* padding: 30px; */
+
+}
+
+@media (max-width:480px) {
+    #corpo-form-cad {
+        width: 350px;
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    /* por padrao os inputs possuem a propriedade e valor display:inline(em linha) com o display block os inputs fica um abaixo do outro */
+    margin: 12px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    /* espaçamento para o placeholder (texto sugerido dentro do input) */
+    outline: none;
+    /* removendo borda interna quando clica dentro do input */
+}
+
+textarea {
+    width: 350px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 10px;
+    text-align: justify;
+}
+
+
+.servcheck {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.servcheck>input {
+    color: red;
+    width: 20px;
+    margin: 0px 10px 0px 30px;
+}
+
+@media (max-width:480px) {
+    input {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+
+    .servcheck {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 300px;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 10px 10px;
+        text-align: justify;
+        /* justify-content: center; */
+        align-items: center;
+
+    }
+
+    .servcheck>input {
+        color: red;
+        width: 20px;
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+.links-form {
+    display: flex;
+    align-items: center;
+    font-style: bolder;
+    margin: 20px 0px;
+}
+
+.links-form>a {
+    text-decoration: none;
+    color: #7159c1;
+    margin-left: 5px;
+}
+
+.links-form>a:hover {
+    text-decoration: underline;
+}
+
+.corpo-form>a:hover {
+    text-decoration: underline;
+}
+
+/* estilizando o botao Submit do formulario */
+input[type=submit] {
+    background-color: #7159c1;
+    cursor: pointer;
+    color: white;
+}
+
+
+#msg-sucesso {
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px solid rgb(34, 139, 34);
+}
+
+.msg-erro {
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(250, 128, 114, .3);
+    border: 1px solid rgb(165, 42, 42);
+}
+
+
+/*  */
+footer {
+    height: 200px;
+}

@@ -1,0 +1,26 @@
+.tech {
+    position: relative;
+}
+
+/* footer sempre no final da pagina */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(max-width:425px) {
+
+    .none {
+        display: none;
+    }
+
+    footer {
+        height: 60px;
+        /* position: bottom; */
+    }
+
+    footer>img {
+        display: none;
+    }
+}
