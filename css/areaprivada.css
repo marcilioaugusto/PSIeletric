@@ -11,6 +11,22 @@ a {
     font-size: 18px;
 }
 
+/*  */
+.linkserv{
+    display: block;
+    text-align: center;
+    /* por padrao os inputs possuem a propriedade e valor display:inline(em linha) com o display block os inputs fica um abaixo do outro */
+    margin: 12px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #7159c1;
+    cursor: pointer;
+    color: white;
+}
+
 
 /* Formulario */
 #corpo-form-cad {

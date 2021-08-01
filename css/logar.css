@@ -141,7 +141,25 @@ div.msg-erro {
 }
 
 
-/*  */
+/* footer sempre no final da pagina */
 footer {
-    height: 200px;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+}
+
+@media(max-width:425px) {
+
+
+    footer {
+        position: absolute;
+        height: 60px;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer>img {
+        display: none;
+    }
 }

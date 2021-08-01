@@ -1,23 +1,33 @@
 .tech {
-    position: relative;
+    /* position: relative; */
+    padding: 6rem 0;
+    margin-bottom: 20px;
 }
 
 /* footer sempre no final da pagina */
 footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
 }
 
 @media(max-width:425px) {
 
+    .tech {
+        position: relative;
+    }
+    
+
     .none {
         display: none;
     }
 
     footer {
+        position: absolute;
         height: 60px;
-        /* position: bottom; */
+        bottom: 0;
+        width: 100%;
+
     }
 
     footer>img {

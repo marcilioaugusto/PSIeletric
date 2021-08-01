@@ -53,11 +53,9 @@
 			<!-- endereço  ----------------------------------------------------------------------->
 			<fieldset>
 				<legend>Endereço</legend>
-				<input type="text" name="cep" id="cep" placeholder="CEP" maxlength="8" required
-					onkeypress="return onlynumber();">
+				<input type="text" name="cep" id="cep" placeholder="CEP" maxlength="8" required onkeypress="return onlynumber();">
 				<input type="text" name="logradouro" id="logradouro" placeholder="Logradouro" maxlength="45">
-				<input type="text" name="numero" id="numero" placeholder="Numero" maxlength="11"
-					onkeypress="return onlynumber();">
+				<input type="text" name="numero" id="numero" placeholder="Numero" maxlength="11" onkeypress="return onlynumber();">
 				<input type="text" name="complemento" id="complemento" placeholder="Complemento" maxlength="45">
 				<input type="text" name="tipo" id="tipo" placeholder="Tipo (Residencial/Comercial)" maxlength="45">
 				<input type="text" name="cidade" id="cidade" placeholder="Cidade" maxlength="45">
@@ -195,10 +193,6 @@
 			}
 		});
 
-		$(document).ready(function () { 
-        	var $seuCampoCpf = $("#cpf");
-        	$seuCampoCpf.mask('000.000.000-00', {reverse: true});
-    	});
 	</script>
 </body>
 

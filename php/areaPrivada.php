@@ -55,13 +55,14 @@
                     <h1>Qual serviço deseja ?</h1> <br>
                     <label for="descricao">Descricao do Serviço</label>
                     <textarea name="descricao" id="descricao" cols="30" rows="5"
-                        placeholder="Serviços na Area Residencial"></textarea> <br>
+                        placeholder="Descreva qual serviço necessita  Serviços de Elétrica Residencial"></textarea> <br>
                     <label for="data">Data do Pedido</label>
                     <input name="data" id='data' type='text' value='<?php echo date("d/m/Y"); ?>' readonly="readonly">
                     <label for="valor">Valor</label>
                     <input type="text" name="valor" id="" value="Valor a Combinar" readonly="readonly"> <br>
                     <input type="submit" value="Abrir Chamado">
                 </form>
+                <a href="areaServico.php" class="linkserv">Visualizar Chamados</a>
                 <a href="sair.php"><strong>Sair</strong></a>
                 
             </section>
